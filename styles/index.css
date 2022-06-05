@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Festive&family=Redressed&display=swap');
+
+main{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(180deg, white 25%, blueviolet 25%, blueviolet 35%, gold 35%, gold 67%, white 50%);
+}
+
+main section:last-of-type{
+    background:radial-gradient(gold 40%, blueviolet 35%, rgba(0, 0, 255, 0.832) 50%,white 40%), url(../imgs/e-removebg-preview.png) no-repeat center top, url(../imgs/laptop.png) no-repeat center bottom;
+    background-blend-mode: soft-light;
+}
+h2,h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.5;
+}
+p:first-of-type{
+    background-color: blueviolet;
+    color: #fff;
+    width: 55%;
+    padding: 0.5em;
+}
+button{
+    background-color: blueviolet;
+    color: #fff;
+    padding: 1em 4em;
+    border-radius: 20px;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 5px 6px 30px gold;
+}
+section:first-of-type div{
+    width: 80%;
+    margin: 6em auto;
+}
+section:last-of-type{
+    display: flex;
+    flex-direction: column-reverse;
+}
+section:last-of-type div{
+    background-color: blueviolet;
+    width: 8%;
+    box-shadow: 5px 10px 40px gold;
+}
+div svg{
+    display: block;
+    padding: 1em;
+}
+.one{
+    width: 28%;
+    margin-left: 0;
+    box-shadow: 10px 10px 10px #aaa inset;
+}
+aside{
+    width: 30%;
+    height: 100vh;
+    background: radial-gradient(#ddd , white );
+    opacity: 0.6;
+    box-shadow: -10px 10px 10px #aaa inset;
+    position: absolute;
+    margin-left: 15em;
+    
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Festive&family=Redressed&display=swap');
+
+
+main{
+    /* max-height: 90vh; */
+    background-color: rgba(204, 204, 204, 0.375);
+    display: grid;
+    grid-template-columns: repeat(3, 15.5% 70% 5%);
+    gap: 4em;
+}
+
+main > section > div{
+    box-shadow: 2px 3px white;
+}
+
+/* styling the header section */
+main>section:first-of-type div{
+    background-color: blueviolet;
+}
+
+
+header h2{
+    text-align: center;
+    color: #fff;
+    padding: 1.2em 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 3px solid white;
+}
+
+/* styling the second section */
+article > div:nth-of-type(1){
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5em;
+}
+article > div:nth-of-type(1) > *{
+    text-align: center;
+    color: #000;
+    padding: 1.2em 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-bottom: 3px solid white;
+}
+.of, .wd, .ui, .da{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 170px ;
+    gap: 0.6em;
+}
+
+section > aside{
+    background: linear-gradient(45deg, khaki, blue);
+    margin-top: 0.6em;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.538);
+    border-radius: 20px 0;
+}
+
+.port aside:last-of-type{
+    display: none;
+}
+
+
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 6px;
+
+}
+h1 span, h2 span{
+    border-bottom: 5px solid blueviolet;
+}
+
+
+/* styling the icons */
+section:last-of-type{
+    display: flex;
+    background: none;
+    flex-direction: column;
+    justify-content: center;
+}
+/* styling svg section */
+section:last-of-type div{
+    width: 40%;
+    background-color: blueviolet;
+    box-shadow: 3px 3px 10px gold;
+
+}
+div svg{
+    display: block;
+    padding: 1em 0.4em;
+}
+
+/* styling the articles */
+
+
+
+article svg{
+    margin-top: 5px;
+}
+
+/* styling the headers */
+header:first-of-type h2{
+    padding-top: 6em;
+}
+
+header:last-of-type h2{
+    padding-bottom: 5em;
+    border-bottom: none;
+}
+
+h2.last{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 5px solid blueviolet;
+
+}
